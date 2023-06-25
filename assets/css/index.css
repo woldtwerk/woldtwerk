@@ -1,0 +1,20 @@
+:root {
+  background-color: var(--c-base);
+  color: var(--c-base-content);
+}
+
+[container] {
+  --container-padding: 1rem;
+  --container-size: 64rem;
+
+  position: relative;
+  width: min(calc(100% - 2 * var(--container-padding)), var(--container-size, 100%));
+}
+
+[container~="center"] {
+  margin-inline: auto;
+}
+
+.prose {
+  max-width: var(--un-prose-body-width) !important;
+}

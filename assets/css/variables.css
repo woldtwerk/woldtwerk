@@ -1,0 +1,11 @@
+:root {
+  --c-base: #fff;
+  --c-base-content: #050505;
+}
+
+html.dark {
+  --c-base: #050505;
+  --c-base-content: #fff;
+
+  color-scheme: dark;
+}
