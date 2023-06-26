@@ -1,42 +1,9 @@
-# Content v2 Minimal Starter
+Hey, I am Willi. My passion is everything js, css and html related.
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+I'm especially fond of Vue and custom elements. I also like Drupal a lot. It's an amazing CMS and you can build performant frontend with it.
 
-## Setup
+I like to build things that work automagically. That's why I created a vite plugin for building drupal themes. It's inspired by all the magic we get spoiled with by amazing frameworks like Nuxt.
 
-Make sure to install the dependencies:
+Also I'm addicted to good lighthouse scores. Correct handling of images has huge influence in good scores. That's why I build a custom element for drupal. It delivers the best image by letting the browser handle the work.
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+Apart from programming I like flying with the paramotor and biking.
