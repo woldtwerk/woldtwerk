@@ -1,0 +1,9 @@
+{
+  "id": "fJbrSgt2O2",
+  "head": {
+    "link": [],
+    "style": []
+  },
+  "html": "<footer class=\"grid justify-center gap-4 p-4\" nuxt-ssr-component-uid><small> @ 2023 Willi Woldt. All rights reserverd. </small><nav aria-label=\"Socials\"><ul class=\"flex gap-4 justify-center\"><!--[--><li><a href=\"https://github.com/woldtwerk\" rel=\"noopener noreferrer\" target=\"_blank\" class=\"i-mdi:github\">Github</a></li><li><a href=\"https://www.linkedin.com/in/willi-woldt-5b4178233/\" rel=\"noopener noreferrer\" target=\"_blank\" class=\"i-mdi:linkedin\">LinkedIn</a></li><li><a href=\"https://twitter.com/woldtwerk\" rel=\"noopener noreferrer\" target=\"_blank\" class=\"i-mdi:twitter\">Twiiter</a></li><li><a href=\"https://www.drupal.org/u/woldtwerk\" rel=\"noopener noreferrer\" target=\"_blank\" class=\"i-mdi:drupal\">Drupal</a></li><!--]--></ul></nav></footer>",
+  "state": {}
+}
