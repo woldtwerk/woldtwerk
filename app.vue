@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import '@unocss/reset/tailwind.css'
+
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+  },
+})
 </script>
 
 <template>

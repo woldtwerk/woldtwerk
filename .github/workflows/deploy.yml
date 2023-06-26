@@ -1,0 +1,43 @@
+name: Build GH Page
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Cache pnpm modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
+
+      - name: Install and Build 🔧
+        run: |
+          pnpm i
+          pnpm generate
+
+      - name: Deploy Page 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist

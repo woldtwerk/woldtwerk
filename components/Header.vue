@@ -15,15 +15,20 @@ watch(open, () => {
     : nuxt?.removeAttribute('inert')
 })
 
+const router = useRouter()
+router.afterEach(() => {
+  open.value = false
+})
+
 const links = [
   {
     label: 'Work',
     to: '/work',
   },
-  {
-    label: 'Blog',
-    to: '/blog',
-  },
+  // {
+  //   label: 'Blog',
+  //   to: '/blog',
+  // },
   {
     label: 'CV',
     to: '/cv',
@@ -50,8 +55,8 @@ const openMenu = () => {
           </NuxtLink>
         </li>
       </ul>
-      <DarkToggle />
-      <button type="button" class="" @click="openMenu">
+      <DarkToggle class="p-4 h-full" />
+      <button type="button" class="p-4 h-full" @click="openMenu">
         <i class="i-mdi:menu inline-block" />
         <span class="sr-only">Open Menu</span>
       </button>
@@ -59,12 +64,12 @@ const openMenu = () => {
   </header>
 
   <Teleport to="body">
-    <nav v-if="open" class="inset-0 fixed z-10 grid place-items-center bg-[--c-base] text-center">
+    <nav v-if="open" class="inset-0 fixed z-10 grid place-items-center bg-base text-center">
       <button type="button" class="absolute top-8 right-8" @click="open = false">
         <i class="i-mdi:window-close inline-block text-3xl" />
         <span class="sr-only">Close Menu</span>
       </button>
-      <ul>
+      <ul class="slide-enter-content">
         <li v-for="link in links" :key="link.to" class="grid">
           <NuxtLink :to="link.to" class="p-4 text-3xl" @click="open = false">
             {{ link.label }}

@@ -47,7 +47,14 @@ function toggleDark(event: MouseEvent) {
 </script>
 
 <template>
-  <button role="switch" aria-label="Toggle Dark Mode" class="grid place-items-center bg-transparent" @click="toggleDark">
+  <button
+    :aria-checked="isDark"
+    type="button"
+    role="switch"
+    aria-label="Toggle Dark Mode"
+    class="grid place-items-center bg-transparent"
+    @click="toggleDark"
+  >
     <i
       :class="{
         'i-material-symbols:wb-sunny': !isDark,

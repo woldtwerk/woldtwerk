@@ -1,11 +1,15 @@
 :root {
-  --c-base: #fff;
-  --c-base-content: #050505;
+  --c-base: hsl(0 0% 85%) --strip-color;
+  --c-base-content: hsl(0 0% 10%) --strip-color;
+  --un-prose-body: hsl(var(--c-base-content) / var(--un-text-opacity, 1));
+  --un-prose-headings: hsl(var(--c-base-content) / 1);
+  --un-prose-links: hsl(0 0% 0% / 1);
 }
 
 html.dark {
-  --c-base: #050505;
-  --c-base-content: #fff;
-
+  --c-base: hsl(0 0% 10%) --strip-color;
+  --c-base-content: hsl(0 0% 85%) --strip-color;
+  --un-prose-links: hsl(0 0% 100% / 1);
+  
   color-scheme: dark;
 }

@@ -33,7 +33,7 @@ const year = useDateFormat(useNow(), 'YYYY')
     <nav aria-label="Socials">
       <ul class="flex gap-4 justify-center">
         <li v-for="link in links" :key="link.to">
-          <NuxtLink :to="link.to" :class="link.icon">
+          <NuxtLink :to="link.to" :class="link.icon" target="_blank">
             {{ link.label }}
           </NuxtLink>
         </li>
