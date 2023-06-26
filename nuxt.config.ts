@@ -6,9 +6,6 @@ export default defineNuxtConfig({
   experimental: {
     componentIslands: true,
   },
-  app: {
-    baseURL: '/woldtwerk/',
-  },
   ssr: true,
   modules: [
     '@nuxt/content',
