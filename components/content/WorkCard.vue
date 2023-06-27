@@ -1,17 +1,31 @@
 <script setup lang="ts">
-import { describe } from 'node:test'
-
 interface Props {
-  to: string
+  to?: string
   title: string
   icon: string
 }
 
-defineProps<Props>()
+const props = defineProps<Props>()
+
+const component = computed(() => {
+  if (props.to)
+    return resolveComponent('NuxtLink')
+  return 'div'
+})
+
+const attrs = computed(() => {
+  if (props.to) {
+    return {
+      to: props.to,
+      target: '_blank',
+    }
+  }
+  return {}
+})
 </script>
 
 <template>
-  <NuxtLink :to="to" target="_blank" class="grid grid-cols-[4rem_1fr] items-center decoration-none p-4 hover:bg-opacity-10 hover:bg-base-content not-prose">
+  <Component :is="component" v-bind="attrs" class="grid grid-cols-[4rem_1fr] items-center decoration-none p-4 hover:bg-opacity-10 hover:bg-base-content not-prose">
     <i :class="icon" class="text-3xl justify-self-center" />
     <div>
       <div class="text-lg">
@@ -21,5 +35,5 @@ defineProps<Props>()
         <slot />
       </div>
     </div>
-  </NuxtLink>
+  </Component>
 </template>

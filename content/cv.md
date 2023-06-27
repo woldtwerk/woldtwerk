@@ -37,13 +37,13 @@
 Frontend Engineer at UEBERBIT GmbH
 
 ### 2017 - 2018
-internship @ UEBERBIT GmbH
+internship at UEBERBIT GmbH
 
 ## 2010 - 2012
 Siemens AG
 
 ### 2008
-internship at MatsArt
+internship at MatsArt (photographer)
 
 ### 2007 
 internship at IT College Putbus
