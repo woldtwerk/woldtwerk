@@ -27,6 +27,7 @@ export default defineConfig({
     'i-mdi:drupal',
     'i-mdi:symfony',
     'i-simple-icons:vite',
+    'i-mdi:language-javascript',
   ],
   rules: [
     [/^slide-enter-(\d+)$/, ([_, n]) => ({

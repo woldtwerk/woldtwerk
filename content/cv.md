@@ -1,6 +1,7 @@
 # CV
 
 ## Conferences
+- Drupal Con Lille 2023
 - Vue Conf DE Berlin 2022
 - Drupal Con Prag 2022
 
@@ -14,16 +15,16 @@
 - PHP
 
 ### Tools
-- vite, vitest
-- webpack
+- vitest, playwright
+- webpack, vite
 - Plugins for Build Tools (webpack, vite, esbuild, postcss)
 
 ### Frameworks
 - <i class="i-mdi:vuejs"></i>Vue & <i class="i-mdi:nuxt"></i> Nuxt
 - Custom Elements & Lit
 - Svelte
-- node
 - <i class="i-mdi:drupal"></i> Drupal
+- tailwind, unocss
 
 ### Devops
 - Docker
@@ -39,21 +40,8 @@ Frontend Engineer at UEBERBIT GmbH
 ### 2017 - 2018
 internship at UEBERBIT GmbH
 
-## 2010 - 2012
-Siemens AG
-
-### 2008
-internship at MatsArt (photographer)
-
-### 2007 
-internship at IT College Putbus
-
-
 ## Education
 
 ### 2014 - 2018
 - Bachelor of Science in Software and Media
 - Member of SundXplosion e.V.
-
-### 2013
-University of Rostock
